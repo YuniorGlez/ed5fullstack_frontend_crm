@@ -6,15 +6,14 @@ import { Customer } from '../models/customer.model';
   providedIn: 'root'
 })
 export class CustomersService {
-
+  apiUrl = "http://localhost:3000/customers";
   constructor() { }
 
-
   getAll(): Promise<Customer[]> {
-    return axios.get('http://jsonplaceholder.typicode.com/users')
+    return axios.get(this.apiUrl)
       .then(res => res.data)
-
   }
+  
 
 
     // return [{
