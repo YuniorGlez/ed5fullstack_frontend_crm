@@ -1,0 +1,11 @@
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input [(ngModel)]="loginForm.email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input [(ngModel)]="loginForm.password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="123456">
+</div>
+<div class="mb-3">
+  <button (click)="login()" class="btn btn-success">Entrar</button>
+</div>
